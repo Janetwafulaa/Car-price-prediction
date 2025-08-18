@@ -1,4 +1,4 @@
-# Car-price-prediction
+
 # Car Price Prediction using Regression Models
 
 This project applies different **regression techniques** to predict the selling price of cars based on their features.  
