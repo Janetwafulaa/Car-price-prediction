@@ -21,4 +21,28 @@ The goal is to compare the performance of various models and understand how regu
 - Python  
 - Pandas, NumPy – data manipulation  
 - Scikit-learn – machine learning models  
-- Matplotlib – visualizations  
+- Matplotlib – visualizations
+
+  ## Explanation of the model and the Visualizations and Insights derived
+**Data Cleaning Part**
+  
+  - Loading the dataset and displaying the first rows to see what the rows and columns look like
+  - Checking for missing values in the dataset to ensure there is no missing values because we want to avoid bias and ensure models can actually run
+  - Filling missing values, filling missing values can sometimes be better than dropping rows because we will be preserving the data and ensuring our model gets as much data, and preventing bias
+  - Removing duplicate rows from the dataset to avoid bias in the model because some rows will appear more than others
+  - Knowing all possible values in a categorical column is important before encoding because you might come across unknown categories during encoding
+  - Checking outliers because they may affect model accuracy, in that they will distort parameter estimates and increase error variance
+  - Checking if any numerical columns are stored as strings and converting them to numbers to ensure models accept them
+  - creating necessary columns that you will need to improve model efficiency
+  - resetting index after cleaning
+  - saving your cleaned dataset
+
+**Exploratory Data Analysis**
+
+  - Diesel was the most common type of fuel used
+  - Histogram of the selling prices- here we can see that most cars selling prices ranged between 0 and 2000000
+  - Relationship between car age and selling price using a scatter plot- we could see that the higher the selling price, the lower the car age, and vice versa
+  - Grouping cars by fuel type and finding the average selling price for each group - out of all the categories, diesel had the highest average selling price
+  - Bar chart showing the number of cars per transmission type - In this bar chart manual transmission was used the most in most cars
+  - Car with the highest mileage in the dataset - the car with the highest mileage was Maruti Alto 800 CNG LXI Optional
+  - 
