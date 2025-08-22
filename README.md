@@ -45,4 +45,18 @@ The goal is to compare the performance of various models and understand how regu
   - Grouping cars by fuel type and finding the average selling price for each group - out of all the categories, diesel had the highest average selling price
   - Bar chart showing the number of cars per transmission type - In this bar chart manual transmission was used the most in most cars
   - Car with the highest mileage in the dataset - the car with the highest mileage was Maruti Alto 800 CNG LXI Optional
-  - 
+  - Correlation between mileage and selling price - 0.12 as observed in the correlation heatmap 
+  - Automatic cars are more expensive than manual cars
+  - A line chart showing the trend of selling prices over the years - here we can see prices increased as years went by
+  - The brand that appears most in the dataset is the Maruti brand
+
+**Machine Learning**
+
+ - Assumptions of Linear regression(Linearity,Independence of errors (No autocorrelation),Homoscedasticity,Normality of residuals)
+ - Using linear regression after training the model, I found the coefficient and intercept as Intercept: 1901561.3870947324
+  Coefficients:
+  mileage(km/ltr/kg): -34687.28384660838
+  car_age: -62721.03253147038
+ -The R² was 0.35 and MSE was 117648041930.44037
+ -On Lasso regression, the metrics were R²: 0.3518437325863625,MSE: 117648042612.38016, showing it performed the same as Linear regression
+
