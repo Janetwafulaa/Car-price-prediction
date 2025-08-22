@@ -63,5 +63,5 @@ The goal is to compare the performance of various models and understand how regu
  - Cross-validation gives a better estimate of model performance than a single train-test split because Cross-validation (commonly k-fold cross-validation) divides the     dataset into k folds. The model is trained k times, each time using a different fold as the test set and the remaining folds as training data.
 This ensures that every data point gets to be in both training and testing at different stages.
 The final performance is usually taken as the average across all folds, giving a more reliable and stable estimate of model performance.
- - Linear, Lasso, Ridge, or Polynomial all performed the same, showing the underlying relationship is simple and mostly linear, also showing no serious multicollinearity or irrelevant features
+ - Linear, Lasso, and Ridge all performed the same. As for polynomial Regression, it was the best performing model since it had a higher R² of 0.42 and lower MSE as compared to the others
 
