@@ -57,6 +57,6 @@ The goal is to compare the performance of various models and understand how regu
   Coefficients:
   mileage(km/ltr/kg): -34687.28384660838
   car_age: -62721.03253147038
- -The R² was 0.35 and MSE was 117648041930.44037
- -On Lasso regression, the metrics were R²: 0.3518437325863625,MSE: 117648042612.38016, showing it performed the same as Linear regression
+ - The R² was 0.35 and MSE was 117648041930.44037
+ - On Lasso regression, the metrics were R²: 0.3518437325863625,MSE: 117648042612.38016, showing it performed the same as Linear regression
 
