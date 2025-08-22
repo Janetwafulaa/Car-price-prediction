@@ -28,7 +28,7 @@ The goal is to compare the performance of various models and understand how regu
   
   - Loading the dataset and displaying the first rows to see what the rows and columns look like
   - Checking for missing values in the dataset to ensure there is no missing values because we want to avoid bias and ensure models can actually run
-  - Filling missing values, filling missing values can sometimes be better than dropping rows because we will be preserving the data and ensuring our model gets as much data, and preventing bias
+  - Filling missing values- filling missing values can sometimes be better than dropping rows because we will be preserving the data and ensuring our model gets as much data, and preventing bias
   - Removing duplicate rows from the dataset to avoid bias in the model because some rows will appear more than others
   - Knowing all possible values in a categorical column is important before encoding because you might come across unknown categories during encoding
   - Checking outliers because they may affect model accuracy, in that they will distort parameter estimates and increase error variance
@@ -57,6 +57,11 @@ The goal is to compare the performance of various models and understand how regu
   Coefficients:
   mileage(km/ltr/kg): -34687.28384660838
   car_age: -62721.03253147038
- - The R² was 0.35 and MSE was 117648041930.44037
- - On Lasso regression, the metrics were R²: 0.3518437325863625,MSE: 117648042612.38016, showing it performed the same as Linear regression
+ - The R² was 0.35 and the MSE was 117648041930.44037
+ - On Lasso regression, the metrics were R²: 0.3518437325863625, MSE: 117648042612.38016, showing it performed the same as Linear regression
+ - Ridge Regression also performed the same as linear regression
+ - Cross-validation gives a better estimate of model performance than a single train-test split because Cross-validation (commonly k-fold cross-validation) divides the     dataset into k folds. The model is trained k times, each time using a different fold as the test set and the remaining folds as training data.
+This ensures that every data point gets to be in both training and testing at different stages.
+The final performance is usually taken as the average across all folds, giving a more reliable and stable estimate of model performance.
+ - Linear, Lasso, Ridge, or Polynomial all performed the same, showing the underlying relationship is simple and mostly linear, also showing no serious multicollinearity or irrelevant features
 
